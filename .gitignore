@@ -1,0 +1,62 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+
+# =========================
+# Virtual Environment
+# =========================
+.venv/
+venv/
+env/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Data (local only)
+# =========================
+data/raw/
+data/processed/
+data/curated/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Airflow
+# =========================
+airflow/logs/
+airflow/__pycache__/
+airflow/.airflowignore
+airflow/airflow.db
+
+# =========================
+# Docker
+# =========================
+*.pid
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+*.iml
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
