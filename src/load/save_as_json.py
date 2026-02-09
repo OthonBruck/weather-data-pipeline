@@ -2,7 +2,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-def save_raw_weather(data: dict, city: str) -> None:
+def save_processed_weather(data: dict, city: str) -> None:
     now = datetime.now()
 
     base_path = Path("data/raw") / \

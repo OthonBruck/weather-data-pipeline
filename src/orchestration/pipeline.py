@@ -1,6 +1,6 @@
 from ..extract.fetch_weather import fetch_weather_city
 from ..transformation.transform_weather import transform_weather_info
-from ..load.save_as_json import save_raw_weather
+from ..load.save_as_json import save_processed_weather
 
 CITIES =[{
     "name": "London",
@@ -17,7 +17,7 @@ def run():
         transformed_data.append(clean)
 
     print(transformed_data)
-    save_raw_weather(transformed_data, "London")
+    save_processed_weather(transformed_data, "London")
 
 if __name__ == "__main__":
     run()
